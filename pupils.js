@@ -1,74 +1,19 @@
 var pupils = {
-  anna: 29, 
-  misha: 35, 
-  stepan: 1, 
-  elena: 99,
+  Anna: 29, 
+  Misha: 90, 
+  Stepan: 1, 
+  Elena: 80,
 }
 
-var bestMark = 0;
-var pupilName = "";
+getBestMark();
 
-function bestMark() {
+function getBestMark() {
+  var max = 0,
+    pupil = '';
   for (name in pupils) {
-    if(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    )
+    if (pupils[name] > max) 
+    max = pupils[name];
+    pupil = name;
   }  
+  return console.log('Best student: ' + pupil + '\r\nBest ' + pupil + '\'s mark: '+ max);
 }
-
-
-console.log(pupils.bestMark())
