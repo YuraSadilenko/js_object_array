@@ -1,9 +1,12 @@
 var array = [43, 23, 57, 54, 60, 41, 10, 60, 23, 47, 60, 12, 59, 60];
 
+console.log('Всего проведено исследований: ' + array.length);
+console.log('Наилучший результат: ' + getMaxValue());
+console.log(getMaxIndexes());
+
 for (i = 0; i < array.length; i++) {
   console.log('Образец под номером ' + (i+1) + ' - результат - ' + array[i]);
 }
-console.log('Всего проведено исследований: ' + array.length);
 
 function getMaxValue() {
   var max = array[0]; 
@@ -12,7 +15,6 @@ function getMaxValue() {
   }
   return max;
 }
-console.log('Наилучший результат: ' + getMaxValue());
 
 function getMaxIndexes() {
   var max = -Infinity;
@@ -27,4 +29,3 @@ function getMaxIndexes() {
   }
   return maxIndexes;
 }
-console.log(getMaxIndexes());
