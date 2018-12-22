@@ -20,7 +20,6 @@ var car = {
     if (this.amountOfFuel < 10) {
       console.log('Вам нужно заправить свой автомобиль!');
     }
-    
   },
   stopMoving: function() {
     if (this.isEngineStart) {

@@ -14,13 +14,13 @@ function sumOfArray() {
   for ( var i = 0; i < array.length; i++) {
     sum = sum + array[i];
   }
-  return sum
+  return sum;
 }
 
 function getMaxValue() {
   var max = array[0]; 
   for (var i = 0; i < array.length; i++) { 
-      if (max < array[i]) max = array[i]; 
+    if (max < array[i]) max = array[i]; 
   }
   return max;
 }
