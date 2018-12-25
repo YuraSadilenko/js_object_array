@@ -21,7 +21,7 @@ function getMaxIndexes() {
   var maxIndexes = [];
   for (var i = 0; i < array.length; i++) {
     if (array[i] === max) {
-      maxIndexes.push(i+1);
+      maxIndexes.push(i + 1);
     } else if (array[i] > max) {
       maxIndexes = [i];
       max = array[i];

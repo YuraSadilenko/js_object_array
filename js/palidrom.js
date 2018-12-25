@@ -6,10 +6,6 @@ console.log(test2);
 
 function isPalindrome(str) {
   var strReverse = str.split('').reverse().join(''); 
-  if (strReverse === str) {
-    return true;
-  } else {
-    return false;
-  }
+  return strReverse === str;
 }
 
