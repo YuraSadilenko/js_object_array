@@ -13,7 +13,7 @@ var car = {
   startMove: function() {
     if (this.isEngineStart) {
       this.isStartMove = true;
-      console.log('Машина марки ' + car.mark +',' + car.color +  ' цвета поехала!');
+      console.log('Машина марки ' + car.mark + ',' + car.color + ' цвета поехала!');
     } else {
       console.log('Включите вначале зажигание');
     }
@@ -24,9 +24,9 @@ var car = {
   stopMoving: function() {
     if (this.isEngineStart) {
       this.isStopMove = true;
-      console.log('Машинка остановилась')
+      console.log('Машинка остановилась');
     } else {
-      console.log('Зажигание и так выключено')
+      console.log('Зажигание и так выключено');
     }
   },
   refuelling: function() {
@@ -34,12 +34,12 @@ var car = {
       this.amountOfFuel = this.amountOfFuel + 50;
       console.log(this.amountOfFuel);
     } else {
-      console.log('Вам не нужна заправка')
+      console.log('Вам не нужна заправка');
     }
   }
-}
+};
 
-console.log(car.startEngine());
-console.log(car.startMove());
-console.log(car.stopMoving());
-console.log(car.refuelling());
+car.startEngine();
+car.startMove();
+car.stopMoving();
+car.refuelling();

@@ -3,11 +3,12 @@ var pupils = {
   Misha: 90, 
   Stepan: 1, 
   Elena: 80,
-}
+};
 
 getBestMark();
 
 function getBestMark() {
+  var name;
   var max = 0,
     pupil = '';
   for (name in pupils) {
