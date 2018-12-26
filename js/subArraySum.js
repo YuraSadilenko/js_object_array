@@ -1,15 +1,16 @@
-var array = [1, -2, 3, 4, -9, 9, 6];
+var array = [1, -2, 3, 4, -9, 11, 6];
 
-getSumOfSubArray(array);
+console.log(getMaxSubSum(array));
 
-function getSumOfSubArray(arr) {
-  var maxSum = 0;
+function getMaxSubSum(arr) {
+  var maxSum = 0; // если совсем не брать элементов, то сумма 0
+
   for (var i = 0; i < arr.length; i++) {
-    var subArraySum = 0;
+    var sumFixedStart = 0;
     for (var j = i; j < arr.length; j++) {
-      subArraySum += arr[j];
-      maxSum = Math.max(maxSum, subArraySum);
+      sumFixedStart += arr[j];
+      maxSum = Math.max(maxSum, sumFixedStart);
     }
   }
-  console.log(maxSum);
+  return maxSum;
 }
